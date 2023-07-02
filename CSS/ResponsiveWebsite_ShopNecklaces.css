@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff !important;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.navbar-brand img {
+    width: 75px;
+    height: auto;
+    margin: 0 2px 0 100px;
+}
+
+.search {
+    background-color: rgb(240, 222, 194);
+    border-style: none;
+    border-radius: 20px 0 0 20px;
+    height: 27px;
+    margin-right: 70px;
+}
+
+.btn-search {
+    padding: 3px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(240, 222, 194);
+    margin-left: 10px;
+    margin-right: 30px;
+    border-style: none;
+}
+
+.container h2{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.container h3 {
+    font-family: 'Martel', serif;
+    font-size: 25px;
+}
+
+.container .col li {
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-left: 210px;
+}
+
+/*FOR ODD NUMBERS*/
+.categoryblank {
+    background-color: #fff;
+    height: 0px;
+    width: 0px;
+}
+
+/*START OF CATEGORIES*/
+
+/*ATTACK ON TITAN NECKLACE*/
+/*.category8*/
+.Wings {
+    background-color: #ffb347;
+    height: 450px;
+    width: 330px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+}
+
+.category8 h3 {
+    margin-left: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.category8 p {
+    font-family: 'Quattrocento', serif;
+    font-size: 15px;
+}
+
+/*BEN & BEN INSPORED NECKLACES*/
+/*.category9*/
+.MTN, .RideHome, .Susi, .Leaves, .Talaarawan, .Hummingbird, .Sunrise, .Sampaguita, .SSNHB, .AA {
+    background-color: #ffb347;
+    height: 450px;
+    width: 330px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+}
+
+.category9 h3 {
+    margin-left: 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+}
+
+.category9 p {
+    font-family: 'Quattrocento', serif;
+    font-size: 15px;
+}
+
+/*END OF CATEGORIES*/
+
+
+/*START OF ANIMATION/RESPONSIVE*/
+
+/*FOR ATTACK ON TITAN NECKLACE ONLY - CATEGORY8*/
+.container .category8::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 330px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, .1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    margin: 0 auto;
+}
+
+.container .category8:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.container .category8:hover h3 {
+    opacity: 0;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Playfair Display', serif;
+}
+
+.container .category8:hover p {
+    opacity: 0;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Quattrocento', serif;
+}
+
+.container .category8 p {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+    font-family: 'Quattrocento', serif;
+}
+/*END OF CATEGORY*/
+
+/*START OF ATTACK ON TITAN NECKLACE SPECIFIC*/
+.container .Wings::before {
+    background-image: url(../images/Responsive_Website/AOT.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+/*END OF SPECIFIC - CATEGORY8*/
+/*END OF ATTACK ON TITAN NECKLACE*/
+
+
+/*FOR BEN & BEN INSPIRED NECKLAE ONLY - CATEGORY9*/
+.container .category9::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 330px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, .1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    margin: 0 auto;
+}
+
+.container .category9:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.container .category9:hover h3 {
+    opacity: 0;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Playfair Display', serif;
+}
+
+.container .category9:hover p {
+    opacity: 0;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Quattrocento', serif;
+}
+
+.container .category9 p {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+    font-family: 'Quattrocento', serif;
+}
+/*END OF CATEGORY9*/
+
+/*START OF MAYARI COLLECTION SPECIFIC*/
+.container .MTN::before {
+    background-image: url(../images/Responsive_Website/MTN.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .RideHome::before {
+    background-image: url(../images/Responsive_Website/RideHome.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .Susi::before {
+    background-image: url(../images/Responsive_Website/Susi.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .Leaves::before {
+    background-image: url(../images/Responsive_Website/Leaves.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .Talaarawan::before {
+    background-image: url(../images/Responsive_Website/Talaarawan.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .Hummingbird::before {
+    background-image: url(../images/Responsive_Website/Hummingbird.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .Sunrise::before {
+    background-image: url(../images/Responsive_Website/Sunrise.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .Sampaguita::before {
+    background-image: url(../images/Responsive_Website/Sampaguita.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .SSNHB::before {
+    background-image: url(../images/Responsive_Website/SSNHB.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.container .AA::before {
+    background-image: url(../images/Responsive_Website/ArawAraw.jpg);
+    height: 450px;
+    width: 330px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+/*END OF SPECIFIC - CATEGORY9*/
+/*END OF BEN & BEN INSPIRED NECKLACE*/
+
+
+/*START OF CATEGORYBLANK*/
+.container .categoryblank::before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    width: 150px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, .1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    margin: 0 auto;
+}
+
+.container .categoryblank:hover:before {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+}
+
+.container .categoryblank:hover h3 {
+    opacity: 0;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Playfair Display', serif;
+}
+
+.container .categoryblank:hover p {
+    opacity: 0;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Quattrocento', serif;
+}
+
+.container .categoryblank p {
+    position: relative;
+    z-index: 2;
+    transition: 0.5s;
+    font-family: 'Quattrocento', serif;
+}
+/*END OF CATEGORYBLANK*/
+
+/*END OF ANIMATION/RESPONSIVE*/
+
+
+/*FOOTER*/
+.bottom, .copyright {
+    margin: auto;
+    width: 1000px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.bottom .copyright p {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #000;
+}
